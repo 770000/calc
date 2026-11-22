@@ -11,3 +11,7 @@ def div (a, b):
     if b == 0:
         raise ValueError ('Нельзя делить на ноль')
     return a / b
+
+def mod (a, b):
+    return a % b
+
