@@ -17,6 +17,11 @@ pipeline {
                     pytest
                 '''
             }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'htmlcov/**', allowEmptyArchive: true
+                }
+            }
         }
     }
 }
